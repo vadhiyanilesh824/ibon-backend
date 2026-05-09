@@ -1,0 +1,59 @@
+[class*="sidebar-dark"] .brand-link{
+    border-bottom: 0px !important;
+}
+.brand-link .brand-image { margin-top: 0px !important; }
+[class*="sidebar-dark-"] { background-color: #132231 !important; }
+.main-header { box-shadow: 0 10px 30px 0 rgba(39, 56, 89, 0.1); border-bottom: 0px !important; }
+.h-50px { height: 50px; }
+
+.w-5 { width: 15px; }
+.h-5 { height: 15px; }
+.card-file-thumb { height: 200px; overflow: hidden; text-align: center; }
+.img-responsive { max-width: 100%; max-height: 100%; margin: auto; text-align: center; }
+
+.dsj-file-box .dropdown-file {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1;
+}
+
+/*pagination*/
+.dsj-pagination-center .pagination {
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.dsj-pagination-right .pagination {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.dsj-pagination .pagination {
+    margin-bottom: 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.pagination .page-link,
+.page-item.disabled .page-link {
+    min-width: 36px;
+    min-height: 36px;
+    line-height: 36px;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    font-size: 0.875rem;
+    border-radius: 50% !important;
+    color: var(--dark);
+}
+
+.pagination .page-item {
+    margin: 0 2px;
+}
+
+.pagination .active .page-link {
+    background-color: var(--primary);
+}
+.pagination .page-link:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
