@@ -46,7 +46,7 @@ Table of contents
     02. CSS color variable
 ====================================== */
 :root {
-  --base-color: #da251c;
+  --base-color: #EF7F1A;
   --white: #ffffff;
   --black: #000000;
   --red: #da251c;
@@ -6858,9 +6858,7 @@ header.sticky.sticky-active .header-reverse.header-dark.glass-effect {
 header.sticky.sticky-active .navbar-brand .alt-logo {
   visibility: visible;
   opacity: 1;
-  width: 100px;
-  position: absolute;
-  margin-top: -20px;
+  width: auto;
 }
 .default-logo {
   -webkit-transition: width 1s ease-in-out;
@@ -7005,26 +7003,23 @@ header .navbar.mini-header .navbar-brand img {
 header .navbar-brand {
   margin-right: 0;
   vertical-align: middle;
-  padding: 30px 0;
+  padding: 10px 0;
   display: inline-block;
   font-size: 0;
 }
 header .navbar-brand .default-logo {
   visibility: visible;
   opacity: 1;
-  width: 120px;
-  position: absolute;
-  height: auto;
-  margin-top: -20px;
+  width: auto;
 }
 header .navbar-brand .alt-logo, header .navbar-brand .mobile-logo {
   visibility: hidden;
   opacity: 0;
   width: 0;
 }
-/* header .navbar-brand img {
+header .navbar-brand img {
   max-height: 46px;
-} */
+}
 header .header-top-bar {
   position: fixed;
   top: 0;

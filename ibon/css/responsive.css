@@ -19745,7 +19745,7 @@
   .navbar .navbar-collapse.show, .navbar-modern-inner .navbar-collapse.show, .navbar-full-screen-menu-inner .navbar-collapse.show {
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch;
-    padding-top: 80px;
+    /* padding-top: 80px; */
   }
   .navbar .navbar-nav, .navbar-modern-inner .navbar-nav, .navbar-full-screen-menu-inner .navbar-nav {
     padding: 15px 15px 28px;

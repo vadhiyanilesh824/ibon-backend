@@ -46,7 +46,7 @@
 :root {      
     --alt-font: 'cerebri-sans-regular';
     --primary-font:  'cerebri-sans-regular';
-    --base-color: #da251c;
+    --base-color: #EF7F1A;
     --dark-gray:#060606;
     --very-light-gray:#eceff1;
     --yellow: #ecab23;
@@ -197,7 +197,7 @@ header .btn.btn-small i {
 /* bg gradient color */
 .bg-gradient-green-yellow-color { 
     background: rgb(236,171,35); 
-    background: linear-gradient(306deg, rgba(236,171,35,1) 0%, rgba(0,83,61,1) 85%);
+    background: linear-gradient(306deg, rgba(236,171,35,1) 0%, rgba(42,43,41,1) 85%);
 }
 .bg-gradient-gray-light-dark-transparent {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(32, 35, 41, 1)), to(transparent));
