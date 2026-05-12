@@ -1,3 +1,4 @@
+<title>@hasSection('title')@yield('title') - @endif{{ site_settings('company_name') ?? 'ZIBON CERAMIC' }}</title>
 <link rel="shortcut icon" href="{{ site_settings('logo') }}" type="image/x-icon">
 <link rel="apple-touch-icon" href="{{ site_settings('logo') }}" sizes="180x180">
 <link rel="apple-touch-icon" sizes="72x72" href="{{ site_settings('logo') }}" >

@@ -64,7 +64,7 @@ class BrandController extends Controller
         // $brand_translation->save();
 
         flash( __('Brand has been inserted successfully'))->success();
-        return redirect()->route('admin/brands');
+        return redirect()->route('brands');
     }
 
     /**
@@ -121,7 +121,7 @@ class BrandController extends Controller
         // $brand_translation->save();
 
         flash( __('Brand has been updated successfully'))->success();
-        return redirect('admin/brands');
+        return redirect()->route('brands');
     }
 
     /**
@@ -132,6 +132,10 @@ class BrandController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $brand = Brand::findOrFail($id);
+        $brand->delete();
+
+        flash( __('Brand has been deleted successfully'))->success();
+        return redirect()->route('brands');
     }
 }

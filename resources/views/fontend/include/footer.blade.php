@@ -19,7 +19,7 @@
                                 class="feather icon-feather-mail"></i>Need support?</a>
                         <a href="tel:{{ site_settings('phone') }}"
                             class="col btn btn-extra-large btn-base-color left-icon btn-box-shadow btn-rounded d-inline-block align-middle xs-m-5px xs-px-0"><i
-                                class="feather icon-feather-phone-call"></i>+91 78200 28000</a>
+                                class="feather icon-feather-phone-call"></i>{{ site_settings('phone') }}</a>
                     </div>
 
                 </div>
@@ -53,11 +53,9 @@
             <div class="col-12 col-lg col-sm-4 xs-mb-30px order-sm-4 order-lg-3">
                 <span class="fs-18 fw-400 d-block text-white mb-5px">Our Collection</span>
                 <ul>
-                    <li><a href="{{ route('site.product') }}">{{ site_settings('our_collection_1') }}</a></li>
-                    <li><a href="{{ route('site.product') }}">{{ site_settings('our_collection_2') }}</a></li>
-                    <li><a href="{{ route('site.product') }}">{{ site_settings('our_collection_3') }}</a></li>
-                    <li><a href="{{ route('site.product') }}">{{ site_settings('our_collection_4') }}</a></li>
-                    <li><a href="{{ route('site.product') }}">{{ site_settings('our_collection_5') }}</a></li>
+                    @foreach ($main_categories as $m_cat)
+                        <li><a href="{{ route('site.category', $m_cat->slug) }}">{{ $m_cat->name }}</a></li>
+                    @endforeach
                 </ul>
             </div>
             <!-- end footer column -->
